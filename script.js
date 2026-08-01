@@ -353,11 +353,3 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 });
-
-// === INSTAGRAM EMBED ===
-(function() {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = '//www.instagram.com/embed.js';
-    document.body.appendChild(script);
-})();
