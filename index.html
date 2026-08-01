@@ -170,56 +170,74 @@
         </div>
     </section>
 
-    <section id="interventions" class="section-padding bg-gradient-soft">
+        <section id="interventions" class="section-padding bg-gradient-soft">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Découvrez nos <span class="brand-highlight">Interventions</span></h2>
                 <p class="section-desc">Des soins réalisés avec précision et dévouement.</p>
             </div>
             <div class="interventions-gallery-grid">
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="0">
                     <img src="services/soins-gallery-1.webp" alt="Soins dentaires - traitement" loading="lazy" decoding="async">
                     <div class="intervention-caption">Soins & Urgences</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="1">
                     <img src="services/soins-gallery-2.webp" alt="Soins dentaires - équipement" loading="lazy" decoding="async">
                     <div class="intervention-caption">Équipement Moderne</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="2">
                     <img src="services/soins-gallery-3.webp" alt="Soins dentaires - cabinet" loading="lazy" decoding="async">
                     <div class="intervention-caption">Cabinet Confortable</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="3">
                     <img src="services/implants-gallery-1.webp" alt="Implants dentaires" loading="lazy" decoding="async">
                     <div class="intervention-caption">Implants</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="4">
                     <img src="services/implants-gallery-2.webp" alt="Prothèses dentaires" loading="lazy" decoding="async">
                     <div class="intervention-caption">Prothèses</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="5">
                     <img src="services/esthetique-gallery-1.webp" alt="Facettes dentaires" loading="lazy" decoding="async">
                     <div class="intervention-caption">Facettes</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="6">
                     <img src="services/esthetique-gallery-2.webp" alt="Blanchiment dentaire" loading="lazy" decoding="async">
                     <div class="intervention-caption">Blanchiment</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="7">
                     <img src="services/esthetique-gallery-3.webp" alt="Esthétique du sourire" loading="lazy" decoding="async">
                     <div class="intervention-caption">Esthétique</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="8">
                     <img src="services/paro-gallery-1.webp" alt="Détartrage dentaire" loading="lazy" decoding="async">
                     <div class="intervention-caption">Parodontologie</div>
                 </div>
-                <div class="intervention-gallery-item">
+                <div class="intervention-gallery-item" data-index="9">
                     <img src="services/para-gallery-1.webp" alt="Gouttières nocturnes" loading="lazy" decoding="async">
                     <div class="intervention-caption">Parafonctions</div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Visionneuse d'image">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fermer la visionneuse">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Image précédente">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Image suivante">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
 
     <section id="gallery" class="section-padding bg-white">
         <div class="container">
