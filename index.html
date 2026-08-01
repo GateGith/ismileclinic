@@ -64,13 +64,13 @@
 
 <main id="main-content">
     <section class="hero-video-section" id="top">
-        <div class="video-container">
-            <div class="video-wrapper">
-                <video autoplay muted loop playsinline preload="metadata" class="bg-video" tabindex="-1" aria-hidden="true">
-                    <source src="images/hero-video.mp4" type="video/mp4">
-                    <p>Votre navigateur ne prend pas en charge la vidéo HTML5.</p>
-                </video>
-            </div>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video autoplay muted loop playsinline webkit-playsinline preload="auto" class="bg-video" tabindex="-1" aria-hidden="true" id="heroVideo" poster="images/hero-poster.webp">
+                <source src="images/hero-video.mp4" type="video/mp4">
+                <p>Votre navigateur ne prend pas en charge la vidéo HTML5.</p>
+            </video>
+        </div>
             <div class="video-overlay"></div>
             <div class="container video-content">
                 <span class="hero-badge"><i class="fas fa-bolt"></i> Urgences 24h/24</span>
