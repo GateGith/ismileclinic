@@ -1,4 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', document.addEventListener('DOMContentLoaded', function() {
+    // === HERO VIDEO iPHONE AUTOPLAY FIX ===
+    const heroVideo = document.getElementById('heroVideo');
+    
+    if (heroVideo) {
+        // Try to play on load
+        heroVideo.play().catch(function(error) {
+            console.log('Autoplay prevented, waiting for user interaction');
+        });
+        
+        // Start video on first user interaction
+        const startVideo = function() {
+            heroVideo.play().catch(function(e) {});
+            // Remove listeners after first interaction
+            document.removeEventListener('touchstart', startVideo);
+            document.removeEventListener('scroll', startVideo);
+            document.removeEventListener('click', startVideo);
+        };
+        
+        // Listen for user interactions
+        document.addEventListener('touchstart', startVideo, { once: true });
+        document.addEventListener('scroll', startVideo, { once: true });
+        document.addEventListener('click', startVideo, { once: true });
+        
+        // Ensure video is loaded
+        heroVideo.addEventListener('loadeddata', function() {
+            heroVideo.play().catch(function(e) {});
+        });
+    }
+    () => {
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     const mainContent = document.getElementById('main-content');
